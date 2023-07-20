@@ -2,6 +2,7 @@
     <%= flash[:notice] %>
 </div>
 
+<div class="show-comment">
 <p>
   <strong>Title:</strong>
   <%= @book.title %>
@@ -17,4 +18,4 @@
  |
  <%= link_to "Back", books_path(@book.id) %>
 </p>
-
+</div>

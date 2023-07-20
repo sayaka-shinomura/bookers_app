@@ -4,3 +4,39 @@
   box-sizing: border-box;
 }
 
+body {
+  display: block;
+  text-align: left;
+  margin: 30px;
+  background-color: white;
+  color: black;
+  font-family: 'Kaushan', cursive, sans-serif;
+  font-size: 15px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+.index-table :last-child {
+  margin-bottom: 20px;
+}
+
+.field, .area, .actions {
+  margin-bottom: 10px;
+}
+
+.show-comment :last-child {
+  margin-left: 10px;
+}
+
+.edit-form :last-child {
+  margin-left: 0;
+}
+
