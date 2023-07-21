@@ -2,14 +2,24 @@
   <strong>Editing Book</strong>
 </h1>
 
+<div class="notice">
 <% if @book.errors.any? %>
- <%= @book.errors.count %> error prohibited this book from being saved:
- <ul>
-  <% @book.errors.full_messages.each do |message| %>
-  <li><%= message %></li>
-  <% end %>
- </ul>
+
+ <div clsss="error-message">
+  <%= @book.errors.count %> error prohibited this book from being saved:
+ </div>
+
+ <div id="update-message">
+  <ul>
+   <% @book.errors.full_messages.each do |message| %>
+   <li><%= message %></li>
+   <% end %>
+  </ul>
+ </div>
+
 <% end %>
+</div>
+
 
 <div class="edit-form">
 <%= form_with model: @book do |f| %>
